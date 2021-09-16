@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/AidanTilgner/Subreddit-Scraper/issues"
   },
-  "homepage": "https://github.com/AidanTilgner/Subreddit-Scraper#readme"
+  "homepage": "https://github.com/AidanTilgner/Subreddit-Scraper#readme",
+  "dependencies": {
+    "mysql2": "^2.3.0",
+    "puppeteer": "^10.2.0",
+    "sequelize": "^6.6.5"
+  }
 }
