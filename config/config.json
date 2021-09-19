@@ -9,14 +9,14 @@
   "test": {
     "username": "root",
     "password": "rootroot",
-    "database": "database_test",
+    "database": "reddit_scraper",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "rootroot",
-    "database": "database_production",
+    "database": "reddit_scraper",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

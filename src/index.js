@@ -5,9 +5,8 @@ const PORT = process.env.PORT || 5000
 const subreddit = require('./routes/subreddit')
 const { urlencoded } = require('express')
 
-//  To validate the MySQL connection
-const checkConnection = require('./sequelize/checks/connection')
-app.use(checkConnection())
+//  DB Connection
+require('../sequelize/database/connection')
 
 //  To allow connections to the server
 app.use(cors())

@@ -1,10 +1,9 @@
 const { Sequelize, DataTypes } = require('sequelize')
-const sequelize = new Sequelize()
 
 //  To sync the table changes when they need to be synced
-const { syncHeadlines } = require('../functions/syncTables') 
+const { syncHeadlines } = require('../sequelize/functions/syncTables') 
 
-const headline = sequelize.define('headline', {
+module.exports = sequelize.define('headline', {
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,

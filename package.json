@@ -26,5 +26,8 @@
     "nodemon": "^2.0.12",
     "puppeteer": "^10.2.0",
     "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
   }
 }
