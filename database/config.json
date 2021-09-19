@@ -1,6 +1,0 @@
-{  
-    "driver": "mysql",  
-    "user": "root",  
-    "database": "reddit_scraper",  
-    "password": "rootroot"   
-}
