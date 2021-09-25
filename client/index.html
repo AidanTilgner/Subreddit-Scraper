@@ -11,17 +11,56 @@
     <nav class="navbar">
         <h3 class="navbar__title">Scraper</h3>
         <ul class="navbar__items">
-            <li>
-                <a href="">
+            <li class="navbar__item">
+                <a class="navbar__link" href="#">
                     home
                 </a>
             </li>
-            <li>
-                <a href="">
+            <li class="navbar__item">
+                <a class="navbar__link" href="#">
                     about
                 </a>
             </li>
         </ul>
     </nav>
+    <div class="hero">
+        <h1 class="hero__tagline">Input a subreddit name:</h1>
+        <div class="hero__form">
+            <h3 class="hero__prompt">r/</h3>
+            <input type="text" class="hero__input" id="user-input">
+            <button class="hero__submit" id="submit">scrape</button>
+        </div>
+    </div>
+    <div class="output">
+        <h3 class="output__results">Results:</h3>
+        <table class="table" id="table">
+            <tr class="table__row">
+                <th class="table__header">Subreddit</th>
+                <th class="table__header">Headline</th>
+                <th class="table__header">Keywords</th>
+                <th class="table__header">Tags</th>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell">
+                    thing
+
+                </td>
+                <td class="table__cell">
+                    lorem
+
+                </td>
+                <td class="table__cell">
+                    thing
+
+                </td>
+                <td class="table__cell">
+                    thing
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
