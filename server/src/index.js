@@ -8,6 +8,16 @@ const { urlencoded } = require('express')
 //  DB Connection
 require('./database/connection')
 
+//  Test db connection
+try{
+    async () => {
+        await sequelize.authenticate()
+        console.log('Connection to database was successful')
+    }
+} catch(err){
+    console.log('Error with database connection', err)
+}
+
 //  To allow connections to the server
 app.use(cors())
 
@@ -20,7 +30,7 @@ app.use(express.json())
 
 //  So that when a user looks for data on a given subreddit an action can be controlled
 //  by the subreddit.js file
-app.use("/subreddit/:endpoint", subreddit)
+app.use("/subreddit", subreddit)
 
 //  then to actually make the server listen
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`))

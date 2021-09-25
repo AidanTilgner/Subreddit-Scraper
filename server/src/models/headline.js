@@ -7,6 +7,10 @@ module.exports = sequelize.define('headline', {
         autoIncrement: true,
         primaryKey: true,
     },
+    subreddit: {
+        type: Sequelize.TEXT,
+        allowNull: false,
+    },
     headline: {
         type: Sequelize.TEXT,
         allowNull: false,
