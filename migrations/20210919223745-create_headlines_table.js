@@ -1,26 +1,19 @@
 'use strict';
 
-const { sequelize } = require("../models");
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    //  Initial creation of the headlines table
-    return queryInterface.createTable("headlines", {
+    return queryInterface.createTable('headlines', {
       id: {
           type: Sequelize.INTEGER,
           allowNull: false,
-          primaryKey: true,
           autoIncrement: true,
+          primaryKey: true,
       },
       headline: {
           type: Sequelize.TEXT,
           allowNull: false,
       },
-      link: {
-          type: Sequelize.STRING,
-          allowNull: true,
-      },
-      upvotes: {
+      karma: {
           type: Sequelize.FLOAT,
           allowNull: true
       },
@@ -32,12 +25,16 @@ module.exports = {
           type: Sequelize.TEXT,
           allowNull: true,
       },
-      createdAt: Sequelize.DATE,
-      updatedAt: Sequelize.DATE,
-    })
+      createdAt: {
+        type: Sequelize.DATE,
+      },
+      updatedAt: {
+        type: Sequelize.DATE
+      }
+  })
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.dropTable("headlines")
+    return queryInterface.dropTable('headlines')
   }
 };

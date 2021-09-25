@@ -2,7 +2,7 @@
   "name": "subreddit_scraper",
   "version": "1.0.0",
   "description": "A web scraper for reading subreddits",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",

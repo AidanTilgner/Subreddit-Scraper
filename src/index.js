@@ -6,7 +6,7 @@ const subreddit = require('./routes/subreddit')
 const { urlencoded } = require('express')
 
 //  DB Connection
-require('../sequelize/database/connection')
+require('./database/connection')
 
 //  To allow connections to the server
 app.use(cors())
